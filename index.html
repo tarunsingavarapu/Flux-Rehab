@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux Rehab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header class="banner">
+        <img src="C:\Users\TSINGAVA\Downloads\Clinic\banner2.png" alt="Background Image" class="background">
+        <div class="overlay">
+            <h1> FLUX REHAB </h1>
+            <h2>REHABILITATION FOR <br><span>A BETTER LIVING</span></h2>
+            <img src="C:\Users\TSINGAVA\Downloads\Clinic\logo.png" alt="Flux Rehab Logo" class="logo">
+        </div>
+    </header>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-choose">
+        <h2>WHY CHOOSE FLUX?</h2>
+        <p>Outpatient Services | Day Care | Online Therapy | Home Therapy</p>
+        <p> Timings: 9:00 A.M To 8:00 P.M </p>
+        <div class="service-images">
+            <div class="small-images">
+		<img src="C:\Users\TSINGAVA\Downloads\Clinic\people erc1.png" alt="Main Therapy">
+                <img src="C:\Users\TSINGAVA\Downloads\Clinic\old women exr1.png" alt="Therapy Image 1">
+                <img src="C:\Users\TSINGAVA\Downloads\Clinic\old women exr2.png" alt="Therapy Image 2">
+            </div>
+        </div>
+    </section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=10%, initial-scale=1.0">
+    <title>Flux Rehab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Gallery Section -->
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="C:\Users\TSINGAVA\Downloads\Clinic\details.png" alt="Clinic Equipment">
+            <img src="C:\Users\TSINGAVA\Downloads\Clinic\eqp1.png" alt="Clinic Equipment">
+            <img src="C:\Users\TSINGAVA\Downloads\Clinic\eqp5.png" alt="Clinic Equipment">
+            <img src="C:\Users\TSINGAVA\Downloads\Clinic\eqp6.png" alt="Clinic Equipment">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".gallery img");
+
+        function moveSlide(n) {
+            slideIndex += n;
+            if (slideIndex >= slides.length) { slideIndex = 0; }
+            if (slideIndex < 0) { slideIndex = slides.length - 1; }
+            document.querySelector(".gallery").style.transform = `translateX(${-slideIndex * 100}%)`;
+        }
+    </script>
+
+</body>
+</html>
+
+    <!-- SPECIALTY SERVICES -->
+    <section class="services">
+        <h2>SPECIALITY SERVICES</h2>
+        <ul>
+            <li>  Brain Injury </li>
+            <li>  Stroke </li>
+            <li>  Ortho Rehab </li>
+            <li>  Sports Injury </li>
+            <li>  Oncology </li>
+            <li>  Spinal Cord Injury </li>
+            <li>  Pediatric Rehab </li>
+            <li>  Musculoskeletal Disorder </li>
+            <li>  Geriatrics </li>
+            <li>  Women Health (Obg & Gynec) </li>
+        </ul>
+    </section>
+
+    <!-- CONTACT DETAILS -->
+    <footer>
+        <p>Email: <a href="mailto:drchitradarekha@gmail.com">drchitradarekha@gmail.com</a></p>
+        <p>Website: <a href="https://www.fluxrehab.com">www.fluxrehab.com</a></p>
+        <p>Call: <a href="tel:9441709638">9441709638</a></p>
+        <p> Timings: 9:00 A.M To 8:00 P.M </p>
+    </footer>
+
+</body>
+</html>
